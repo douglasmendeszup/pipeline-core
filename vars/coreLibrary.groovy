@@ -1,4 +1,4 @@
-import br.com.dynamic.assembler.Assembler
+import br.com.zup.assembler.Assembler
 
 def call(body){
 
