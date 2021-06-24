@@ -27,7 +27,7 @@ spec:
             - ${jobRunId}
         topologyKey: "kubernetes.io/hostname"
             """,
-        workspaceVolume: dynamicPVC(requestsSize: "2Gi", storageClassName: "rook-cephfs", accessModes: "ReadWriteOnce")
+        workspaceVolume: dynamicPVC(requestsSize: "2Gi", storageClassName: "gp2", accessModes: "ReadWriteOnce")
     ) {
         node(POD_LABEL) {        
             stage('Assembler'){
